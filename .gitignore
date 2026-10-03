@@ -1,0 +1,14 @@
+bin/
+obj/
+build/
+.vs/
+*.user
+*.suo
+_probe*.txt
+_build.txt
+_deploy.txt
+_restore.txt
+results/
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://gitlab.com/vtolvr-mods/ModLoader/-/raw/release/schema.json",
+  "Title": "VTOLVR Connect Soak Harness",
+  "Description": "Automated soak tester: random SP mission to cockpit-ready. Part of vtolvr-connect.",
+  "PreviewImageUrl": "https://vtolvr-mods.com/static/img/Logo.png",
+  "DependenciesIds": [
+    3265689427
+  ],
+  "Tags": [
+    "tooling",
+    "soak"
+  ],
+  "MetaData": {
+    "DllName": "SoakHarness.dll",
+    "AllowLoadOnStart": true,
+    "ShowOnMainList": true,
+    "DllHash": ""
+  }
+}

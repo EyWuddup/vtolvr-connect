@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>$(MSBuildThisFileDirectory)..\..\build\SoakHarness\</OutputPath>
+    <AssemblyName>SoakHarness</AssemblyName>
+    <RootNamespace>SoakHarness</RootNamespace>
+    <VTOLVR Condition="'$(VTOLVR)' == ''">C:\Program Files (x86)\Steam\steamapps\common\VTOL VR</VTOLVR>
+    <ModLoader Condition="'$(ModLoader)' == ''">C:\Program Files (x86)\Steam\steamapps\common\VTOL VR Mod Loader</ModLoader>
+    <VTOLAPI Condition="'$(VTOLAPI)' == ''">C:\Program Files (x86)\Steam\steamapps\workshop\content\3018410\3265689427</VTOLAPI>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ModLoader.Framework">
+      <HintPath>$(ModLoader)\Managed\ModLoader.Framework.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VTOLAPI">
+      <HintPath>$(VTOLAPI)\VTOLAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(VTOLVR)\VTOLVR_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(VTOLVR)\VTOLVR_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(VTOLVR)\VTOLVR_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="item.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

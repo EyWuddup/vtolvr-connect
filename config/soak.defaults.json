@@ -1,0 +1,13 @@
+{
+  "steamAppId": 667970,
+  "modLoaderAppId": 3018410,
+  "vtolApiWorkshopId": 3265689427,
+  "steamUserdataId": "57417170",
+  "vtolVrPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\VTOL VR",
+  "modLoaderPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\VTOL VR Mod Loader",
+  "localModName": "SoakHarness",
+  "resultsDir": "",
+  "iterationTimeoutSec": 480,
+  "iterations": 1,
+  "launchDelaySec": 15
+}
