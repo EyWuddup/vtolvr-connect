@@ -30,26 +30,26 @@
 
 ### Task 2: SoakHarness mod
 
-- [ ] csproj with Steam HintPaths + env overrides
-- [ ] Main + controller state machine:
+- [x] csproj with Steam HintPaths + env overrides
+- [x] Main + controller state machine:
   - ReadyRoom → pick vehicle/mission
   - VehicleConfiguration → optional LoadRecommended → LaunchMission
   - Briefing → FlyButton
   - Flight map → wait isFlightReady / player GO → PASS
-- [ ] ResultWriter to `%USERPROFILE%\Documents\vtolvr-connect\results\` (and optional env override)
-- [ ] Timeout / exception → FAIL JSON
+- [x] ResultWriter to `%USERPROFILE%\Documents\vtolvr-connect\results\` (and optional env override)
+- [x] Timeout / exception → FAIL JSON
 
 ### Task 3: Runner scripts
 
-- [ ] `deploy.ps1` builds with portable or system `dotnet`
-- [ ] `mod-profile.ps1` backs up LoS; ensures API + local soak
-- [ ] `soak.ps1` loops: deploy → launch → poll → kill → archive
+- [x] `deploy.ps1` builds with portable or system `dotnet`
+- [x] `mod-profile.ps1` backs up LoS; ensures API + local soak
+- [x] `soak.ps1` loops: deploy → launch → poll → kill → archive
 
 ### Task 4: Verify build + GitHub
 
-- [ ] `dotnet build` succeeds
-- [ ] Deploy folder created
-- [ ] `gh repo create` + push
+- [x] `dotnet build` succeeds
+- [x] Deploy folder created
+- [x] `gh repo create` + push → https://github.com/EyWuddup/vtolvr-connect
 
 ### Task 5: First live soak (manual kick)
 
